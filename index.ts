@@ -5,6 +5,9 @@ interface IScrapeBaseParams {
     provider: string;
     url: string;
 
+    iframe_src?: string;
+
+
     img?: string;
 
     hqimg?: string;
@@ -49,6 +52,7 @@ export default class scrape {
                     base_params.sdimg = 'http://img.youtube.com/vi/' + uid + '/sddefault.jpg'
                     base_params.maximg = 'http://img.youtube.com/vi/' + uid + '/maxresdefault.jpg'
                     base_params.url = url;
+                    base_params.iframe_src = 'http://youtube.com/embed/' + uid;
 
 
 
@@ -67,6 +71,7 @@ export default class scrape {
                     base_params.sdimg = 'http://img.youtube.com/vi/' + uid + '/sddefault.jpg'
                     base_params.maximg = 'http://img.youtube.com/vi/' + uid + '/maxresdefault.jpg'
                     base_params.url = url;
+                    base_params.iframe_src = 'https://youtube.com/embed/' + uid;
 
 
                     break;
