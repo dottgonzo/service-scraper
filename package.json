@@ -1,6 +1,6 @@
 {
   "name": "service-scraper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "scrape information from yourube, facebook, etc...",
   "main": "index.js",
   "scripts": {
